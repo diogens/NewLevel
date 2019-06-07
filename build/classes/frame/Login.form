@@ -203,19 +203,16 @@
     </Container>
     <Component class="javax.swing.JTextField" name="login">
       <Properties>
-        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JPasswordField" name="senha">
       <Properties>
-        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="default"/>
-        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>

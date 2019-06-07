@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Frame;
 import java.awt.GraphicsEnvironment;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -16,6 +17,12 @@ import javax.swing.JPanel;
  * @author dioge
  */
 public class Login extends javax.swing.JFrame {
+    
+    String username;
+    String password;
+    
+    
+    
     
     static boolean maximized = true;
     int xMouse;
@@ -161,6 +168,11 @@ public class Login extends javax.swing.JFrame {
         );
 
         login.setBorder(null);
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
 
         senha.setBorder(null);
 
@@ -263,9 +275,26 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_pnlHeaderMouseDragged
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.dispose();
-        new dashboard().setVisible(true);
+       if(login.equals("adm") && senha.equals("adm") ){            
+            System.out.println("BEm Vindo");
+            this.dispose();
+            new dashboard().setVisible(true);
+        }else {
+            JOptionPane.showMessageDialog(Login.this,
+                                    "Usuario Invalido",
+                                    "Login",
+                                    JOptionPane.ERROR_MESSAGE);
+             //limpa username e passaword
+             login.setText("");
+             senha.setText("");                  
+            
+        
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loginActionPerformed
 
     /**
      * @param args the command line arguments

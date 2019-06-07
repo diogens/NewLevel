@@ -10,6 +10,7 @@ import java.awt.Frame;
 import java.awt.GraphicsEnvironment;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import model.Funcionario;
 
 /**
  *
@@ -22,6 +23,9 @@ public class funcionarios extends javax.swing.JFrame {
     int yMouse;
     JPanel pnlButton = new JPanel();
     
+    Funcionario trabalhador = new Funcionario();
+    
+   
 
     /**
      * Creates new form dashboard
@@ -67,6 +71,7 @@ public class funcionarios extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        cad = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dashboard");
@@ -345,20 +350,33 @@ public class funcionarios extends javax.swing.JFrame {
         jTable1.setGridColor(new java.awt.Color(255, 255, 255));
         jScrollPane2.setViewportView(jTable1);
 
+        cad.setText("Cadastrar");
+        cad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 971, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 971, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(cad, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cad, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(119, Short.MAX_VALUE))
         );
 
@@ -518,6 +536,10 @@ public class funcionarios extends javax.swing.JFrame {
         new objetivos().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void cadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cadActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -560,6 +582,7 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnMaximize;
     private javax.swing.JButton btnMinimize;
+    private javax.swing.JButton cad;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
