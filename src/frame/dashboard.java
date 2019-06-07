@@ -274,7 +274,7 @@ public class dashboard extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        jButton2.setText("GERENTES");
+        jButton2.setText("PROJETO");
         jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
