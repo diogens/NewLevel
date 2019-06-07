@@ -636,22 +636,22 @@
                     </Container>
                     <Component class="javax.swing.JButton" name="jButton5">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jButton5"/>
+                        <Property name="text" type="java.lang.String" value="ALERTAS"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="jButton6">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jButton5"/>
+                        <Property name="text" type="java.lang.String" value="ATIVIDADES"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="jButton7">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jButton5"/>
+                        <Property name="text" type="java.lang.String" value="FUNCIONARIOS DO M&#xca;S"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="jButton8">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jButton5"/>
+                        <Property name="text" type="java.lang.String" value="PROJETO DESTAQUE"/>
                       </Properties>
                     </Component>
                   </SubComponents>

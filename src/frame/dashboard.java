@@ -378,13 +378,13 @@ public class dashboard extends javax.swing.JFrame {
             .addGap(0, 169, Short.MAX_VALUE)
         );
 
-        jButton5.setText("jButton5");
+        jButton5.setText("ALERTAS");
 
-        jButton6.setText("jButton5");
+        jButton6.setText("ATIVIDADES");
 
-        jButton7.setText("jButton5");
+        jButton7.setText("FUNCIONARIOS DO MÊS");
 
-        jButton8.setText("jButton5");
+        jButton8.setText("PROJETO DESTAQUE");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
